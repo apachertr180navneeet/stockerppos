@@ -21,9 +21,9 @@
         <link rel="stylesheet" href="{{asset('assets/admin/css/bootstrapDataTable.css')}}" />
         <link rel="stylesheet" href="{{asset('assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
         <link rel="stylesheet" href="{{asset('assets/admin/vendor/libs/apex-charts/apex-charts.css')}}" />
+        <link rel="stylesheet" href="{{asset('assets/admin/css/sweet-alert.css')}}" />
         <script src="{{asset('assets/admin/vendor/js/helpers.js')}}"></script>
         <script src="{{asset('assets/admin/js/config.js')}}"></script>
-        <link rel="stylesheet" href="{{asset('assets/admin/css/sweet-alert.css')}}" />
         @yield('style')
         <style>
 
