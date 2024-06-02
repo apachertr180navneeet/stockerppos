@@ -29,16 +29,9 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item {{ request()->is('admin/master/unit*') ? 'active open' : '' }}">
-                    <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <a href="{{ route('admin.master.unit.index') }}" class="menu-link">
                         <div data-i18n="Pages">Unit Master</div>
                     </a>
-                    <ul class="menu-sub">
-                        <li class="menu-item {{ request()->is('admin/master/unit/index') ? 'active' : '' }}">
-                            <a href="{{ route('admin.master.unit.index') }}" class="menu-link">
-                                <div data-i18n="List">List</div>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </li>
