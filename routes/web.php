@@ -62,8 +62,7 @@ Route::name('admin.')->prefix('admin')->group(function () {
         //     Route::get('/', 'index')->name('index');
         //     Route::get('alluser', 'getallUser')->name('alluser');
         //     Route::post('status', 'userStatus')->name('status');
-        //     Route::delete('delete/{id}', 'destroy')->name('destroy');
-        //     Route::get('{id}', 'show')->name('show');
+        //     Route::delete('delete/{id}', 'destroy')->name('dpostroy');    //     Route::get('{id}', 'show')->name('show');
         // });
 
         // Route::name('contacts.')->prefix('contacts')->controller(ContactController::class)->group(function () {
@@ -90,7 +89,10 @@ Route::name('admin.')->prefix('admin')->group(function () {
                 Route::get('index', 'index')->name('index');
                 Route::get('allunit', 'allunit')->name('allunit');
                 Route::post('store', 'store')->name('store');
-                Route::get('edit/{id}', 'edit')->name('edit');
+                Route::post('status', 'status')->name('status');
+                Route::post('delete', 'delete')->name('delete');
+                Route::post('edit', 'edit')->name('edit');
+                Route::post('update', 'update')->name('update');
             });
         });
     });
