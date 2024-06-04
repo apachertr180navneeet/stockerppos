@@ -125,10 +125,6 @@
                 columns: [
                     {
                         data: "unit_code",
-                        render: (data, type, row) => {
-                            const url = '{{ route("admin.master.unit.edit", ":unitId") }}'.replace(':unitId', row.id);
-                            return `<a href="${url}">${row.unit_code}</a>`;
-                        }
                     },
                     { data: "unit_name" },
                     {

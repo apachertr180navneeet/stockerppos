@@ -10,7 +10,8 @@ use App\Http\Controllers\Admin\{
     PageController,
     ContactController,
     NotificationController,
-    UnitController
+    UnitController,
+    ItemController
 };
 
 /*
@@ -84,10 +85,21 @@ Route::name('admin.')->prefix('admin')->group(function () {
 
         // Master All Route
         Route::name('master.')->prefix('master')->group(function () {
-            // unit Master
+            // Unit Master
             Route::name('unit.')->prefix('unit')->controller(UnitController::class)->group(function () {
                 Route::get('index', 'index')->name('index');
                 Route::get('allunit', 'allunit')->name('allunit');
+                Route::post('store', 'store')->name('store');
+                Route::post('status', 'status')->name('status');
+                Route::post('delete', 'delete')->name('delete');
+                Route::post('edit', 'edit')->name('edit');
+                Route::post('update', 'update')->name('update');
+            });
+
+            // Item Master
+            Route::name('item.')->prefix('item')->controller(ItemController::class)->group(function () {
+                Route::get('index', 'index')->name('index');
+                Route::get('allitems', 'allitems')->name('allitems');
                 Route::post('store', 'store')->name('store');
                 Route::post('status', 'status')->name('status');
                 Route::post('delete', 'delete')->name('delete');

@@ -30,7 +30,12 @@
             <ul class="menu-sub">
                 <li class="menu-item {{ request()->is('admin/master/unit*') ? 'active open' : '' }}">
                     <a href="{{ route('admin.master.unit.index') }}" class="menu-link">
-                        <div data-i18n="Pages">Unit Master</div>
+                        <div data-i18n="Pages">Unit</div>
+                    </a>
+                </li>
+                <li class="menu-item {{ request()->is('admin/master/item*') ? 'active open' : '' }}">
+                    <a href="{{ route('admin.master.item.index') }}" class="menu-link">
+                        <div data-i18n="Pages">Item</div>
                     </a>
                 </li>
             </ul>
