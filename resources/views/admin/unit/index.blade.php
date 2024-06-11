@@ -167,7 +167,7 @@
                         type: "POST",
                         url: statusUrl,
                         data: {
-                            userid: unitId,
+                            unitId: unitId,
                             status: newStatus,
                             _token: token
                         },

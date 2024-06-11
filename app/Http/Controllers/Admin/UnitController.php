@@ -80,7 +80,7 @@ class UnitController extends Controller
     {
         try {
             // Get unit ID and status from request
-            $unitid = $request->userid;
+            $unitid = $request->unitId;
             $status = $request->status;
 
             // Update status of the unit
